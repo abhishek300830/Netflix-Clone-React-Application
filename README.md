@@ -16,6 +16,18 @@ react-icons
 react-redux
 styled-components
 
-# current Status
+# Firebase Authentication
 
-25:22 working on index css
+initialize firebase and get Auth
+use functions ( createUserbyEmailandID and signInUsingEmailandPassword and )
+and onAuthStateChanged to login it reference in signup.jsx
+
+# Implemeting Logout Funcitonality using
+
+signout(firebaseAuth);
+and updating using onAuthStateChanged
+
+# completed till
+
+1:12
+importing images
