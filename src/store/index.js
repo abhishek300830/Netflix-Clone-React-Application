@@ -23,6 +23,7 @@ export const getGenres = createAsyncThunk("netflix/genres", async () => {
 });
 
 // fetch Movies
+// pending
 
 const NetflixSlice = createSlice({
   name: "Netflix",

@@ -23,6 +23,7 @@ const Netflix = () => {
 
   useEffect(() => {
     dispach(getGenres());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // understand it later

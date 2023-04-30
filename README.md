@@ -36,5 +36,5 @@ and updating using onAuthStateChanged
 
 # completed till
 
-1:12
-importing images
+1:41
+starting from fetching movies
