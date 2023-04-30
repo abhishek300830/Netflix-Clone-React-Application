@@ -6,10 +6,14 @@ import movieLogo from "../assets/homeTitle.webp";
 import { FaPlay } from "react-icons/fa";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Netflix = () => {
   // state to check is scrolled
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // navigator
+  const navigate = useNavigate();
 
   // understand it later
   window.onscroll = () => {
@@ -33,7 +37,10 @@ const Netflix = () => {
             <img src={movieLogo} alt="" />
           </div>
           <div className="buttons flex">
-            <button className="flex j-center a-center">
+            <button
+              className="flex j-center a-center"
+              onClick={() => navigate("/player")}
+            >
               <FaPlay />
               Play
             </button>
