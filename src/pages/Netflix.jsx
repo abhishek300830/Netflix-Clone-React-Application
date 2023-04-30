@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import backgroundImage from "../assets/home.jpg";
@@ -7,6 +7,8 @@ import { FaPlay } from "react-icons/fa";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { getGenres } from "../store";
 
 const Netflix = () => {
   // state to check is scrolled
@@ -14,6 +16,14 @@ const Netflix = () => {
 
   // navigator
   const navigate = useNavigate();
+
+  // use dispach from redux
+
+  const dispach = useDispatch();
+
+  useEffect(() => {
+    dispach(getGenres());
+  }, []);
 
   // understand it later
   window.onscroll = () => {

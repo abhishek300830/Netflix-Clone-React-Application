@@ -27,6 +27,13 @@ and onAuthStateChanged to login it reference in signup.jsx
 signout(firebaseAuth);
 and updating using onAuthStateChanged
 
+# Creating Account on TMDB
+
+    and get API key from there
+    and store in utils
+
+# setup Redux Store
+
 # completed till
 
 1:12
